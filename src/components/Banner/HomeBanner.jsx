@@ -1,3 +1,5 @@
+import React from 'react'
+
 const HomeBanner = () => {
     return (
         <div class="banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
