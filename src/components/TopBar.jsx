@@ -1,3 +1,5 @@
+import React from 'react'
+
 const TopBar = () => {
     return (
         <div class="top-bar-area top-bar-style-one bg-dark text-light">

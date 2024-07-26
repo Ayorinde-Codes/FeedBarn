@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Footer = () => {
     return (
         <footer class="bg-dark text-light" style="background-image: url(assets/img/shape/8.png);">
