@@ -7,9 +7,9 @@ About = () => {
             <div class="row align-center">
                 <div class="col-xl-6 col-lg-5">
                     <div class="about-style-one-thumb">
-                        <img src="assets/img/800x1000.png" alt="Image Not Found" />
+                        <img src="/assets/img/about/1.jpg" alt="Image Not Found" />
                         <div class="animation-shape">
-                            <img src="assets/img/illustration/1.png" alt="Image Not Found" />
+                            <img src="/assets/img/illustration/1.png" alt="Image Not Found" />
                         </div>
                     </div>
                 </div>
