@@ -1,19 +1,19 @@
-import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import React, { lazy } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from "./pages/Home";
+const Home = lazy(() => import('./pages/Home'));
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Home/>}/>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          {/* <Route path="*" component={Notfound} /> */}
+        </Switch>
+      </Router>
+
+    </div>
   );
 }
 
