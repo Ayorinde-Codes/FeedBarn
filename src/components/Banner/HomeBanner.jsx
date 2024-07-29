@@ -6,7 +6,7 @@ const HomeBanner = () => {
             <div className="banner-fade">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide banner-style-one">
-                        <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(assets/img/banner/3.jpg)" }}></div>
+                        <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(/assets/img/banner/3.jpg)" }}></div>
                         <div className="shape">
                             <img src="/assets/img/shape/2.png" alt="Image Not Found" />
                         </div>
@@ -38,7 +38,7 @@ const HomeBanner = () => {
                         </div>
                     </div>
                     <div className="swiper-slide banner-style-one">
-                        <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(assets/img/2440x1578.png)" }}></div>
+                        <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(/assets/img/banner/4.jpg)" }}></div>
                         <div className="shape">
                             <img src="/assets/img/shape/2.png" alt="Image Not Found" />
                         </div>
