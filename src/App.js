@@ -1,7 +1,6 @@
-import React, { lazy } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-const Home = lazy(() => import('./pages/Home'));
+import Home from './pages/Home'
 
 const App = () => {
   return (
@@ -9,7 +8,6 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route path="*" component={Notfound} /> */}
         </Switch>
       </Router>
 
