@@ -2,140 +2,87 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer class="bg-dark text-light" style="background-image: url(assets/img/shape/8.png);">
-        <div class="container">
-            <div class="f-items default-padding">
-                <div class="row">
+        <footer className="bg-dark text-light" style={{ backgroundImage: "url(assets/img/shape/8.png)" }}>
+        <div className="container">
+            <div className="f-items default-padding">
+                <div className="row">
                     
-                    {/* <!-- Single Itme --> */}
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="footer-item about">
-                            <img class="logo" src="assets/img/logo-light.png" alt="Logo" />
+                    <div className="col-lg-5 col-md-6 item">
+                        <div className="footer-item about">
+                            <img className="logo" src="assets/img/logo-light.png" alt="Logo" />
                             <p>
                                 Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.
                             </p>
                             <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" />
+                                <input type="email" placeholder="Your Email" className="form-control" name="email" />
                                 <button type="submit"> Go</button>  
                             </form>
                         </div>
                     </div>
-                    {/* <!-- End Single Itme --> */}
-
-                    {/* <!-- Single Itme --> */}
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="footer-item link">
-                            <h4 class="widget-title">Explore</h4>
+                    <div className="col-lg-3 col-md-6 item">
+                        <div className="footer-item link">
+                            <h4 className="widget-title">Explore</h4>
                             <ul>
                                 <li>
                                     <a href="about-us.html">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="team.html">Meet Our Team</a>
+                                    <a href="#">Meet Our Team</a>
                                 </li>
                                 <li>
-                                    <a href="blog-single-with-sidebar.html">News & Media</a>
+                                    <a href="#">Services</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Services</a>
-                                </li>
-                                <li>
-                                    <a href="contact-us.html">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="team-details.html">Volunteers</a>
+                                    <a href="#">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    {/* <!-- End Single Itme --> */}
-
-                    {/* <!-- Single Itme --> */}
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="footer-item recent-post">
-                            <h4 class="widget-title">Recent Posts</h4>
+                    <div className="col-lg-4 col-md-6 item">
+                        <div className="footer-item contact">
+                            <h4 className="widget-title">Contact Info</h4>
                             <ul>
                                 <li>
-                                    <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb" />
-                                        </a>
+                                    <div className="icon">
+                                        <i className="fas fa-home"></i>
                                     </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Sep, 2023</span>
-                                        </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Meant widow equal an share least part. </a></h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb" />
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">18 Jul, 2023</span>
-                                        </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Future Plan & Strategy for Consutruction </a></h5>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    {/* <!-- End Single Itme --> */}
-
-                    {/* <!-- Single Itme --> */}
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="footer-item contact">
-                            <h4 class="widget-title">Contact Info</h4>
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-home"></i>
-                                    </div>
-                                    <div class="content">
+                                    <div className="content">
                                         <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham
+                                        5919 Lagos, Nigeria
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon">
-                                        <i class="fas fa-envelope"></i>
+                                    <div className="icon">
+                                        <i className="fas fa-envelope"></i>
                                     </div>
-                                    <div class="content">
+                                    <div className="content">
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:info@barnfeed.com">info@barnfeed.com</a>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="icon">
-                                        <i class="fas fa-phone"></i>
+                                    <div className="icon">
+                                        <i className="fas fa-phone"></i>
                                     </div>
-                                    <div class="content">
+                                    <div className="content">
                                         <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <a href="tel:2151234567">+234 34598768</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    {/* <!-- Single Itme --> */}
-                    
+                    </div>                    
                 </div>
             </div>
-            {/* <!-- Start Footer Bottom --> */}
-            <div class="footer-bottom text-center">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">validthemes</a></p>
+            <div className="footer-bottom text-center">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <p>&copy; Copyright 2024. All Rights Reserved by <a href="https://buildingblockstec.com/" target="_blank" >buildingblocks</a></p>
                     </div>
                 </div>
             </div>
-            {/* <!-- End Footer Bottom --> */}
         </div>
-        <div class="shape-right-bottom">
+        <div className="shape-right-bottom">
             <img src="assets/img/shape/7.png" alt="Image Not Found" />
         </div>
     </footer>

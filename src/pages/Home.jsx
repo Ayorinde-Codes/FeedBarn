@@ -6,6 +6,9 @@ import About from "../components/About";
 import Whyus from "../components/Whyus";
 import Benefits from "../components/Benefits";
 import Service from "../components/Service";
+import Gallery from "../components/Gallery";
+import CallToAction from "../components/CallToAction";
+import Footer from "../components/Footer";
 
 const Home = () => {
     return (
@@ -17,6 +20,9 @@ const Home = () => {
             <Whyus />
             <Service />
             <Benefits />
+            <Gallery />
+            <CallToAction />
+            <Footer />
         </div>
     )
 }
