@@ -29,6 +29,11 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+    static: path.join(__dirname, 'public'),
+    compress: true,
+  },
   plugins: [
     new Dotenv({
       systemvars: true

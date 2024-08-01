@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -24,16 +25,16 @@ const Footer = () => {
                             <h4 className="widget-title">Explore</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <Link to={'/aboutus'}>About Us</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Meet Our Team</a>
+                                    <Link to={'/'}>Meet Our Team</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <Link to={'/services'}>Services</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Contact Us</a>
+                                    <Link to={'/contactus'}>Contact Us</Link>
                                 </li>
                             </ul>
                         </div>
@@ -77,13 +78,13 @@ const Footer = () => {
             <div className="footer-bottom text-center">
                 <div className="row">
                     <div className="col-lg-12">
-                        <p>&copy; Copyright 2024. All Rights Reserved by <a href="https://buildingblockstec.com/" target="_blank" >buildingblocks</a></p>
+                        <p>&copy; Copyright {new Date().getFullYear()}. All Rights Reserved by <a href="https://buildingblockstec.com/" target="_blank" rel='noreferrer' >buildingblocks</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <div className="shape-right-bottom">
-            <img src="assets/img/shape/7.png" alt="Image Not Found" />
+            <img src="assets/img/shape/7.png" alt="Not Found" />
         </div>
     </footer>
     )

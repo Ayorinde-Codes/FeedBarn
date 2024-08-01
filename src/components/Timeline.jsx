@@ -2,100 +2,43 @@ import React from 'react'
 
 const Timeline = () => {
   return (
-    <div class="service-style-two-area half-bg-dark-bottom default-padding-top pb-md-120 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="text-center mb-60 mb-md-40 mb-xs-40">
-                        <h2 class="mask-text large" style="background-image: url(assets/img/shape/28.jpg);">Healthy life with fresh products</h2>
+    <div className="timeline-area default-padding-bottom" style= {{ backgroundImage: "url(assets/img/shape/21.png)" }}>
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-8 offset-lg-2">
+                    <div className="site-heading">
+                        <h2 className="title">Farming have been <br /> since 1866</h2>
+                        <div className="row">
+                            <div className="col-xl-10 offset-xl-2">
+                                <p>
+                                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                      Aliquam eaque laborum ad asperiores dolorem. Adipisci error eaque dolorem,
+                                      itaque aliquam animi fuga dolor ipsam! Velit ratione hic corporis veritatis odit.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="service-style-two-carousel swiper mb--30">
-                        {/* <!-- Additional required wrapper --> */}
-                        <div class="swiper-wrapper">
-
-                            {/* <!-- Single Item --> */}
-                            <div class="swiper-slide">
-                                <div class="service-style-two">
-                                    <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image not Found" />
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="icon">
-                                            <img src="assets/img/icon/21.png" alt="Image Not Found" />
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="#">Agriculture</a></h4>
-                                            <span>Products</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Item -->
-                            <!-- Single Item --> */}
-                            <div class="swiper-slide">
-                                <div class="service-style-two">
-                                    <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image not Found" />
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="icon">
-                                            <img src="assets/img/icon/22.png" alt="Image Not Found" />
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="#">Fresh</a></h4>
-                                            <span>Vegetable</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Item -->
-                            <!-- Single Item --> */}
-                            <div class="swiper-slide">
-                                <div class="service-style-two">
-                                    <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image not Found" />
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="icon">
-                                            <img src="assets/img/icon/23.png" alt="Image Not Found" />
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="#">Organic</a></h4>
-                                            <span>Products</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Item -->
-                            <!-- Single Item --> */}
-                            <div class="swiper-slide">
-                                <div class="service-style-two">
-                                    <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image not Found" />
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="icon">
-                                            <img src="assets/img/icon/24.png" alt="Image Not Found" />
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="#">Dairy</a></h4>
-                                            <span>Products</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* <!-- End Single Item --> */}
-
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="timeline-items">
+                        <div className="timeline-item">
+                            <h2>1906</h2>
+                            <h4>Open Farm</h4>
                         </div>
-
-                        {/* <!-- Navigation --> */}
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
+                        <div className="timeline-item">
+                            <h2>1920</h2>
+                            <h4>Farm Remodelacion</h4>
+                        </div>
+                        <div className="timeline-item">
+                            <h2>1925</h2>
+                            <h4>Grainfarmers Formed</h4>
+                        </div>
+                        <div className="timeline-item">
+                            <h2>1930</h2>
+                            <h4>Start of Agriculture</h4>
+                        </div>
                     </div>
                 </div>
             </div>
