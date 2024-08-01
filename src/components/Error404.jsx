@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const Error404 = () => {
     return (
@@ -11,10 +12,7 @@ const Error404 = () => {
 						<div className="col-lg-8 offset-lg-2">
 							<h1>404</h1>
 							<h2>Sorry Page Was Not Found!</h2>
-							<p>
-								Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth.
-							</p>
-							<a className="btn mt-20 btn-md btn-theme" href="index.html">Back to home</a>
+							<Link className="btn mt-20 btn-md btn-theme" to={'/'}>Back to home</Link>
 						</div>
 					</div>
 				</div>
