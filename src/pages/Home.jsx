@@ -9,6 +9,7 @@ import Service from "../components/Service";
 import Gallery from "../components/Gallery";
 import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner/Banner";
 
 const Home = () => {
     useEffect(() => {
@@ -28,7 +29,8 @@ const Home = () => {
         <div>
             <TopBar />
             <Header />
-            <HomeBanner />
+            {/* <HomeBanner /> */}
+            <Banner />
             <About />
             <Whyus />
             <Service />

@@ -1,23 +1,69 @@
-import React from 'react';
+import { React, useState } from 'react';
+import axios from 'axios';
 
 const ContactForm = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [phone, setPhone] = useState('');
+  const [status, setStatus] = useState('');
+  const [buttonText, setButtonText] = useState('Get in Touch');
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    setButtonText('Sending...');
+    setStatus('');
+
+    const data = {
+      name,
+      phone,
+      email,
+      message,
+    };
+
+    axios
+      .post('https://your-backend-url/api/sendEmail', data)
+      .then((response) => {
+        if (response.data.status === 'success') {
+          setStatus('Message sent successfully');
+          resetForm();
+        } else {
+          setStatus('Message failed to send');
+        }
+        setButtonText('Get in Touch');
+      })
+      .catch((error) => {
+        setStatus('Message failed to send');
+        setButtonText('Get in Touch');
+        console.error(error);
+      });
+  };
+
+  const resetForm = () => {
+        setName('');
+        setMessage('');
+        setEmail('');
+        setPhone('');
+  };
+
     return (
         <div className="contact-area contact-page overflow-hidden bg-gray default-padding">
             <div className="sahpe-right-bottom">
-                <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+                <img src="/assets/img/shape/16.png" alt="Not Found" />
             </div>
             <div className="container">
                 <div className="row align-center">
                     <div className="col-tact-stye-one col-xl-7 col-lg-7">
                         <div className="contact-form-style-one mb-md-50">
-                            <img src="/assets/img/illustration/10.png" alt="Image Not Found" />
+                            <img src="/assets/img/illustration/10.png" alt="Not Found" />
                             <h5 className="sub-title">Have Questions?</h5>
                             <h2 className="heading">Send us a message</h2>
-                            <form method="POST" className="contact-form ">
+                            <form className="contact-form " onSubmit={formSubmit}>
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input className="form-control" id="name" name="name" placeholder="Name" type="text" />
+                                            <input className="form-control" id="name" name="name" value={name} onChange={e => {setName(e.target.value);}} placeholder="Name" type="text" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
@@ -25,13 +71,13 @@ const ContactForm = () => {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input className="form-control" id="email" name="email" placeholder="Email*" type="email" />
+                                            <input className="form-control" id="email" name="email" value={email} onChange={e => {setEmail(e.target.value);}} placeholder="Email*" type="email" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input className="form-control" id="phone" name="phone" placeholder="Phone" type="text" />
+                                            <input className="form-control" id="phone" name="phone" value={phone} onChange={e => {setPhone(e.target.value);}} placeholder="Phone" type="text" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
@@ -39,14 +85,14 @@ const ContactForm = () => {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group comments">
-                                            <textarea className="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                            <textarea className="form-control" id="comments" name="comments" value={message} onChange={e => {setMessage(e.target.value);}} placeholder="Tell Us About Project *"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <button type="submit" name="submit" id="submit">
-                                            <i className="fa fa-paper-plane"></i> Get in Touch
+                                            <i className="fa fa-paper-plane"></i> {buttonText}
                                         </button>
                                     </div>
                                 </div>
