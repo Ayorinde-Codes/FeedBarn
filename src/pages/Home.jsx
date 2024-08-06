@@ -29,8 +29,8 @@ const Home = () => {
         <div>
             <TopBar />
             <Header />
-            {/* <HomeBanner /> */}
-            <Banner />
+            <HomeBanner />
+            {/* <Banner /> */}
             <About />
             <Whyus />
             <Service />

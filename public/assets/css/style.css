@@ -3117,9 +3117,25 @@ a.btn-round-animation.dark {
     # Banner Styles
 =================================================================== */
 .banner-area {
-	height: 100%;
 	width: 100%;
-	position: relative;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.swiper-wrapper {
+    height: 100%;
+}
+
+.swiper-slide {
+    height: 100%;
+}
+
+.banner-thumb {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 1023px) {

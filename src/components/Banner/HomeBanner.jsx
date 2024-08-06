@@ -6,9 +6,9 @@ const HomeBanner = () => {
             <div className="banner-fade">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide banner-style-one">
-                        <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(/assets/img/banner/3.jpg)" }}></div>
+                        <div className="banner-thumb bg-cover shadow dark" style={{ backgroundImage: "url(/assets/img/banner/5.jpg)" }}></div>
                         <div className="shape">
-                            <img src="/assets/img/shape/2.png" alt="Image Not Found" />
+                            <img src="/assets/img/shape/2.png" alt="Not Found" />
                         </div>
                         <div className="container">
                             <div className="row align-center">
@@ -40,7 +40,7 @@ const HomeBanner = () => {
                     <div className="swiper-slide banner-style-one">
                         <div className="banner-thumb bg-cover shadow dark" style={{ background: "url(/assets/img/banner/4.jpg)" }}></div>
                         <div className="shape">
-                            <img src="/assets/img/shape/2.png" alt="Image Not Found" />
+                            <img src="/assets/img/shape/2.png" alt="Not Found" />
                         </div>
                         <div className="container">
                             <div className="row align-center">
