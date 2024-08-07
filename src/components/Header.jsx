@@ -46,18 +46,18 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={'/contactus'}
-                  className={splitLocation === "/contactus" ? "active" : ""}
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
                   to={'/services'}
                   className={splitLocation === "/services" ? "active" : ""}
                 >
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={'/contactus'}
+                  className={splitLocation === "/contactus" ? "active" : ""}
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

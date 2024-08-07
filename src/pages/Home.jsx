@@ -2,14 +2,13 @@ import {React, useEffect} from "react";
 import TopBar from '../components/TopBar'
 import HomeBanner from '../components/Banner/HomeBanner'
 import Header from "../components/Header";
-import About from "../components/About";
 import Whyus from "../components/Whyus";
 import Benefits from "../components/Benefits";
 import Service from "../components/Service";
 import Gallery from "../components/Gallery";
 import CallToAction from "../components/CallToAction";
 import Footer from "../components/Footer";
-import Banner from "../components/Banner/Banner";
+import AboutPreview from "../components/AboutPreview";
 
 const Home = () => {
     useEffect(() => {
@@ -30,8 +29,7 @@ const Home = () => {
             <TopBar />
             <Header />
             <HomeBanner />
-            {/* <Banner /> */}
-            <About />
+            <AboutPreview />
             <Whyus />
             <Service />
             <Benefits />

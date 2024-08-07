@@ -4,20 +4,17 @@ const ChooseUs = () => {
     return (
         <div className="choose-us-style-three-area default-padding bg-dark text-light">
             <div className="illustration-bottom">
-                <img src="assets/img/illustration/17.png" alt="Image Not Found" />
+                <img src="/assets/img/illustration/17.png" alt="Illustration of fresh products" />
             </div>
             <div className="shape" style={{ backgroundImage: "url(/assets/img/about/3.jpg)" }}></div>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">
-                        <h2 className="title">Healthy life with <br /> fresh products</h2>
+                        <h2 className="title">Healthy Life with <br /> Fresh Products</h2>
                         <p>
-                            Consume ipsum dolor sit amet consectetur adipisicing elit.
-                            Veritatis, illo ullam harum et fuga suscipit quibusdam sapiente.
-                            Corrupti ut consequatur magni minus! Iusto eos consectetur similique minus culpa odio temporibus.
+                            Discover the benefits of consuming high-quality, fresh products. Our offerings include biodynamic food, organic gardening, and food certification to ensure you get the best for a healthy life.
                         </p>
                         <div className="list-grid">
-                            
                             <div className="achivement-content">
                                 <div className="item">
                                     <div className="progressbar">
@@ -29,16 +26,16 @@ const ChooseUs = () => {
                                 </div>
                             </div>
                             <ul className="list-item">
-                                <li>Biodynamic food</li>
-                                <li>Organic gardening</li>
-                                <li>Organic food certification</li>
+                                <li>Biodynamic Food</li>
+                                <li>Organic Gardening</li>
+                                <li>Organic Food Certification</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        )
+    )
 }
 
 export default ChooseUs;

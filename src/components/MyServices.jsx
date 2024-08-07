@@ -88,7 +88,7 @@ const MyServices = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-7 pl-45 pl-md-15 pl-xs-15 services-single-content order-lg-last">
               <div className="thumb">
-                <img src="/assets/img/banner/9.jpg" alt="Thumb" />
+                <img src="/assets/img/banner/9.jpg" alt="Service banner" />
               </div>
               {renderTabContent()}
               <div className="common-faq mt-40">
@@ -145,19 +145,19 @@ const MyServices = () => {
                 <div className="content">
                   <ul>
                     <li className={activeTab === 'Agricultural Products' ? 'current-item' : ''}>
-                      <a href="#" onClick={(e) => handleTabClick(e, 'Agricultural Products')}>Agricultural Products</a>
+                      <a href="#" onClick={(e) => handleTabClick(e, 'Agricultural Products')} aria-selected={activeTab === 'Agricultural Products'}>Agricultural Products</a>
                     </li>
                     <li className={activeTab === 'Organic Products' ? 'current-item' : ''}>
-                      <a href="#" onClick={(e) => handleTabClick(e, 'Organic Products')}>Organic Products</a>
+                      <a href="#" onClick={(e) => handleTabClick(e, 'Organic Products')} aria-selected={activeTab === 'Organic Products'}>Organic Products</a>
                     </li>
                     <li className={activeTab === 'Dairy Production' ? 'current-item' : ''}>
-                      <a href="#" onClick={(e) => handleTabClick(e, 'Dairy Production')}>Dairy Production</a>
+                      <a href="#" onClick={(e) => handleTabClick(e, 'Dairy Production')} aria-selected={activeTab === 'Dairy Production'}>Dairy Production</a>
                     </li>
                     <li className={activeTab === 'Sweet Exotic Fruits' ? 'current-item' : ''}>
-                      <a href="#" onClick={(e) => handleTabClick(e, 'Sweet Exotic Fruits')}>Sweet Exotic Fruits</a>
+                      <a href="#" onClick={(e) => handleTabClick(e, 'Sweet Exotic Fruits')} aria-selected={activeTab === 'Sweet Exotic Fruits'}>Sweet Exotic Fruits</a>
                     </li>
                     <li className={activeTab === 'Fresh Vegetables' ? 'current-item' : ''}>
-                      <a href="#" onClick={(e) => handleTabClick(e, 'Fresh Vegetables')}>Fresh Vegetables</a>
+                      <a href="#" onClick={(e) => handleTabClick(e, 'Fresh Vegetables')} aria-selected={activeTab === 'Fresh Vegetables'}>Fresh Vegetables</a>
                     </li>
                   </ul>
                 </div>
@@ -166,7 +166,7 @@ const MyServices = () => {
                 <div className="content">
                   <h3>Need Help?</h3>
                   <p>
-                    Speak with a human to filling out a form? call corporate office and we will connect you with a team member help.
+                    Speak with a human to filling out a form? Call our corporate office and we will connect you with a team member to help.
                   </p>
                   <h2>+(012) 6679545</h2>
                   <h4><a href="mailto:info@agrika.com">info@agrika.com</a></h4>

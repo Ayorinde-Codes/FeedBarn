@@ -7,9 +7,9 @@ const About = () => {
                 <div className="row align-center">
                     <div className="col-xl-6 col-lg-5">
                         <div className="about-style-one-thumb">
-                            <img src="/assets/img/about/1.jpg" alt="Image Not Found" />
+                            <img src="/assets/img/about/4.jpg" alt="Organic Farm" />
                             <div className="animation-shape">
-                                <img src="/assets/img/illustration/1.png" alt="Image Not Found" />
+                                <img src="/assets/img/illustration/1.png" alt="Illustration" />
                             </div>
                         </div>
                     </div>
@@ -17,35 +17,35 @@ const About = () => {
                         <div className="about-style-one-info">
                             <h2 className="title">Agriculture & Organic <br /> Product Farm</h2>
                             <p>
-                                There are many variations of passages of ipsum available but the majority have suffered alteration in some form by injected humor or random word which don’t look even. Comparison new ham melancholy.
+                                Our farm specializes in agriculture and organic produce. We provide high-quality products that are fresh and sustainable.
                             </p>
                             <div className="fun-fact-style-flex mt-35">
                                 <div className="counter">
                                     <div className="timer" data-to="25" data-speed="2000">25</div>
                                     <div className="operator">M</div>
                                 </div>
-                                <span className="medium">Growth Tonns <br /> of Harvest</span>
+                                <span className="medium">Growth Tons <br /> of Harvest</span>
                             </div>
                             <ul className="top-feature">
                                 <li>
                                     <div className="icon">
-                                        <img src="/assets/img/icon/3.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/3.png" alt="Guaranteed Organic Product" />
                                     </div>
                                     <div className="info">
                                         <h4>100% Guaranteed Organic Product</h4>
                                         <p>
-                                            Always parties but trying she shewing of moment.
+                                            Our products are certified organic and meet the highest quality standards.
                                         </p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="icon">
-                                        <img src="/assets/img/icon/2.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/2.png" alt="Healthy Foods Production" />
                                     </div>
                                     <div className="info">
                                         <h4>Top-Quality Healthy Foods Production</h4>
                                         <p>
-                                            Majority have suffered alteration in some form by injected humor.
+                                            We use state-of-the-art methods to ensure the production of healthy and high-quality foods.
                                         </p>
                                     </div>
                                 </li>

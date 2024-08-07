@@ -34,12 +34,11 @@ const Benefits = () => {
               </div>
               <h2 className="title">Distributors of Organic Produce</h2>
               <p>
-                Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously.
+                We pride ourselves on providing high-quality organic produce, ensuring that all our products are fresh and free from harmful chemicals. Our commitment to sustainable farming practices guarantees that you receive only the best.
               </p>
               <ul className="list-standard">
                 <li>Modern Agriculture Equipment</li>
-                <li>Awesome Harvest of Wheat</li>
+                <li>High-Quality Feed and Grain</li>
                 <li>Fresh Fruits & Vegetables</li>
               </ul>
             </div>
