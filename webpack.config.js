@@ -1,12 +1,11 @@
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['./src/index.js'],
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: __dirname,
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -24,16 +23,9 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf|otf)$/, // to import images and fonts
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash].[ext]',
-              outputPath: 'assets',
-            },
-          },
-        ],
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
+        loader: "url-loader",
+        options: { limit: false },
       },
     ],
   },
@@ -47,16 +39,13 @@ module.exports = {
       systemvars: true
     }),
     new HtmlWebPackPlugin({
-      template: "./public/index.html",
-      filename: "index.html"
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: 'public', to: 'assets' }, // Copy all files from public to build/assets
-      ],
-    }),
+      template: "./index.html",
+      filename: "./index.html"
+    })
   ],
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
 };
+
+
