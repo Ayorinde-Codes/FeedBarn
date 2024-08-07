@@ -17,12 +17,12 @@ const Header = () => {
                 <i className="fa fa-bars"></i>
               </button>
               <Link className="navbar-brand" to={'/'}>
-                <img src="/assets/img/logo-mix.png" className="logo" alt="Logo" />
+                <img src="/assets/img/f_logo.png" className="logo" alt="Logo" />
               </Link>
             </div>
           </div>
           <div className="collapse navbar-collapse" id="navbar-menu">
-            <img src="/assets/img/logo.png" alt="Logo" />
+            <img src="/assets/img/f_logo.png" alt="Logo" />
             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
               <i className="fa fa-times"></i>
             </button>
