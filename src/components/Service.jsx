@@ -20,11 +20,11 @@ const Service = () => {
                         <div className="swiper-slide">
                             <div className="service-style-two">
                                 <div className="thumb">
-                                    <img src="/assets/img/services/2.jpg" alt="Image not Found" />
+                                    <img src="/assets/img/services/2.jpg" alt="not Found" />
                                 </div>
                                 <div className="overlay">
                                     <div className="icon">
-                                        <img src="/assets/img/icon/21.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/21.png" alt="Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4><a href="#">Agriculture</a></h4>
@@ -36,11 +36,11 @@ const Service = () => {
                         <div className="swiper-slide">
                             <div className="service-style-two">
                                 <div className="thumb">
-                                    <img src="/assets/img/services/3.jpg" alt="Image not Found" />
+                                    <img src="/assets/img/services/3.jpg" alt="not Found" />
                                 </div>
                                 <div className="overlay">
                                     <div className="icon">
-                                        <img src="/assets/img/icon/22.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/22.png" alt="Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4><a href="#">Fresh</a></h4>
@@ -52,11 +52,11 @@ const Service = () => {
                         <div className="swiper-slide">
                             <div className="service-style-two">
                                 <div className="thumb">
-                                    <img src="/assets/img/services/4.jpg" alt="Image not Found" />
+                                    <img src="/assets/img/services/4.jpg" alt="not Found" />
                                 </div>
                                 <div className="overlay">
                                     <div className="icon">
-                                        <img src="/assets/img/icon/23.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/23.png" alt="Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4><a href="#">Organic</a></h4>
@@ -68,11 +68,11 @@ const Service = () => {
                         <div className="swiper-slide">
                             <div className="service-style-two">
                                 <div className="thumb">
-                                    <img src="/assets/img/services/5.jpg" alt="Image not Found" />
+                                    <img src="/assets/img/services/5.jpg" alt="not Found" />
                                 </div>
                                 <div className="overlay">
                                     <div className="icon">
-                                        <img src="/assets/img/icon/24.png" alt="Image Not Found" />
+                                        <img src="/assets/img/icon/24.png" alt="Not Found" />
                                     </div>
                                     <div className="info">
                                         <h4><a href="#">Dairy</a></h4>

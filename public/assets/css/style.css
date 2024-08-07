@@ -9553,207 +9553,203 @@ footer {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
+/* About preview */
 
-
-/* ============================================================== 
-     # Preloader 
-=================================================================== */
-
-.agrica-preloader {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	cursor: default;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	height: 100%;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	z-index: 9000;
+.about-style-four-area {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 10%, contain;
 }
 
-.agrica-preloader .animation-preloader {
-	z-index: 1000;
-	position: relative;
+.about-four-thumb {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 60px;
 }
 
-.agrica-preloader .animation-preloader::after {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	content: "";
-	height: 100%;
-	width: 100%;
-	background: url(../img/logo-icon.png);
-	transform: translate(-50%, -50%);
-	background-repeat: no-repeat;
-	background-position: center;
+.about-four-thumb img:nth-child(2) {
+    position: absolute;
+    left: -90px;
+    bottom: 0;
+    width: 70%;
 }
 
-.bg-dark .agrica-preloader .animation-preloader::after {
-	background: url(../img/logo-icon-light.png);
-	background-repeat: no-repeat;
-	background-position: center;
+.about-four-thumb img:first-child {
+    border-radius: 50%;
 }
 
-.agrica-preloader .animation-preloader .spinner {
-	-webkit-animation: spinner 1s infinite linear;
-	animation: spinner 1s infinite linear;
-	border-radius: 50%;
-	border: 2px solid rgba(2, 109, 255, 0.3);
-	border-top-color: var(--color-primary);
-	height: 110px;
-	margin: auto;
-	width: 110px;
+.about-four-thumb .experience {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: -70px;
+    top: 60px;
+    text-align: center;
+    background: linear-gradient(97deg, #2ab939 50%, rgba(252,197,27,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
-.bg-dark .agrica-preloader .animation-preloader .spinner {
-	border: 2px solid rgba(255, 255, 255, 0.4);
-	border-top-color: rgba(255, 255, 255, 1);
+.about-four-thumb .experience h2 {
+    margin: 0;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -15px;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(2):before {
-	-webkit-animation-delay: 0.2s;
-	animation-delay: 0.2s;
+.about-four-thumb .experience h2 strong {
+    font-weight: 800;
+    font-size: 60px;
+    display: block;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(3):before {
-	-webkit-animation-delay: 0.4s;
-	animation-delay: 0.4s;
+.about-four-thumb .experience::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 2px dashed var(--white);
+    border-radius: 50%;
+    animation: spinner 20s infinite linear;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(4):before {
-	-webkit-animation-delay: 0.6s;
-	animation-delay: 0.6s;
+.about-four-info h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(5):before {
-	-webkit-animation-delay: 0.8s;
-	animation-delay: 0.8s;
+.about-four-info .nav-tabs {
+    float: left;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    padding-bottom: 0;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(6):before {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
+.about-four-info .nav-tabs::before, .about-four-info .nav-tabs::after {
+    display: none;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(7):before {
-	-webkit-animation-delay: 1.2s;
-	animation-delay: 1.2s;
+.about-four-info .nav-tabs button {
+    float: left;
+    color: var(--color-heading);
+    font-size: 16px;
+    margin: 0;
+    border: none;
+    position: relative;
+    font-weight: 700;
+    background: transparent;
+    padding: 15px 30px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #dddddd;
+    margin-bottom: -2px;
 }
 
-.agrica-preloader
-.animation-preloader
-.txt-loading
-.letters-loading:nth-child(8):before {
-	-webkit-animation-delay: 1.4s;
-	animation-delay: 1.4s;
+.about-four-info .nav-tabs button.active {
+	background: var(--dark);
+	border-color: transparent;
+	color: var(--white);
 }
 
-.agrica-preloader.dark .animation-preloader .spinner {
-	border-color: rgba(255, 255, 255, 0.2);
-	border-top-color: #fff;
+.about-four-info .call-us {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
-.agrica-preloader .loader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	font-size: 0;
-	z-index: 1;
-	pointer-events: none;
+.about-four-info .call-us h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--color-paragraph);
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
-.agrica-preloader .loader .row {
-	height: 100%;
+.about-four-info .call-us h3 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 0;
 }
 
-.agrica-preloader .loader .loader-section {
-	padding: 0px;
+.about-four-info .call-us i {
+    font-size: 50px;
+    color: var(--color-primary);
+    margin-right: 20px;
 }
 
-.agrica-preloader .loader .loader-section .bg {
-	background-color: var(--white);
-	height: 100%;
-	left: 0;
-	width: 100%;
-	-webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-	-o-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
-	transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+.about-four-info .title {
+    font-size: 55px;
+    line-height: 1.1;
 }
 
-.bg-dark .agrica-preloader .loader .loader-section .bg {
-	background-color: var(--dark);
+ul.list-check {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.agrica-preloader .loader.dark_bg .loader-section .bg {
-	background: #111339;
+ul.list-check li {
+    padding-left: 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    font-size: 17px;
+    color: var(--color-heading);
+    line-height: 1.6;
 }
 
-.agrica-preloader.loaded .animation-preloader {
-	opacity: 0;
-	-webkit-transition: 0.3s ease-out;
-	-o-transition: 0.3s ease-out;
-	transition: 0.3s ease-out;
+ul.list-check li::after {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Pro";
+    height: 18px;
+    width: 18px;
+    line-height: 19px;
+    background: var(--color-primary);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 13px;
 }
 
-.agrica-preloader.loaded .loader-section .bg {
-	width: 0;
-	-webkit-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-	-o-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
-	transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+ul.list-check li:first-child {
+	margin-top: 0;
 }
 
-@-webkit-keyframes spinner {
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
+.about-four-info p:last-child {
+    margin: 0;
 }
 
-@keyframes spinner {
-	to {
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
+
+.about-four-info .nav-tabs::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    display: block;
 }
 
-@media screen and (max-width: 767px) {
-	.agrica-preloader .animation-preloader .spinner {
-		height: 8em;
-		width: 8em;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.agrica-preloader .animation-preloader .spinner {
-		height: 7em;
-		width: 7em;
-	}
+.tab-content.about-tab-items {
+    float: left;
+    width: 100%;
+    border-top: 2px solid #e7e7e7;
+    padding-top: 30px;
 }

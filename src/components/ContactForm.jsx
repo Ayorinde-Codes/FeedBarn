@@ -50,20 +50,20 @@ const ContactForm = () => {
     return (
         <div className="contact-area contact-page overflow-hidden bg-gray default-padding">
             <div className="sahpe-right-bottom">
-                <img src="/assets/img/shape/16.png" alt="Not Found" />
+                <img src="/assets/img/shape/16.png" alt="Decorative shape" />
             </div>
             <div className="container">
                 <div className="row align-center">
                     <div className="col-tact-stye-one col-xl-7 col-lg-7">
                         <div className="contact-form-style-one mb-md-50">
-                            <img src="/assets/img/illustration/10.png" alt="Not Found" />
+                            <img src="/assets/img/illustration/10.png" alt="Illustration of contact form" />
                             <h5 className="sub-title">Have Questions?</h5>
-                            <h2 className="heading">Send us a message</h2>
-                            <form className="contact-form " onSubmit={formSubmit}>
+                            <h2 className="heading">Send Us a Message</h2>
+                            <form className="contact-form" onSubmit={formSubmit}>
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input className="form-control" id="name" name="name" value={name} onChange={e => {setName(e.target.value);}} placeholder="Name" type="text" />
+                                            <input className="form-control" id="name" name="name" value={name} onChange={e => setName(e.target.value)} placeholder="Name" type="text" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
@@ -71,13 +71,13 @@ const ContactForm = () => {
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input className="form-control" id="email" name="email" value={email} onChange={e => {setEmail(e.target.value);}} placeholder="Email*" type="email" />
+                                            <input className="form-control" id="email" name="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email*" type="email" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="form-group">
-                                            <input className="form-control" id="phone" name="phone" value={phone} onChange={e => {setPhone(e.target.value);}} placeholder="Phone" type="text" />
+                                            <input className="form-control" id="phone" name="phone" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone" type="text" />
                                             <span className="alert-error"></span>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group comments">
-                                            <textarea className="form-control" id="comments" name="comments" value={message} onChange={e => {setMessage(e.target.value);}} placeholder="Tell Us About Project *"></textarea>
+                                            <textarea className="form-control" id="comments" name="comments" value={message} onChange={e => setMessage(e.target.value)} placeholder="Tell Us About Your Project *"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ const ContactForm = () => {
                                     </div>
                                 </div>
                                 <div className="col-lg-12 alert-notification">
-                                    <div id="message" className="alert-msg"></div>
+                                    <div id="message" className="alert-msg">{status}</div>
                                 </div>
                             </form>
                         </div>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                                 <li>
                                     <div className="content">
                                         <h5 className="title">Hotline</h5>
-                                        <a href="">+4733378901</a>
+                                        <a href="tel:+234733378901">+234733378901</a>
                                     </div>
                                 </li>
                                 <li>

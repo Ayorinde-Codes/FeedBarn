@@ -8,10 +8,10 @@ const TopBar = () => {
                     <div className="col-lg-8">
                         <ul className="item-flex">
                             <li>
-                                <i className="fas fa-clock"></i> Opening Hours : Sunday- Friday, 08:00 am - 05:00pm
+                                <i className="fas fa-clock"></i> Opening Hours: Sunday - Friday, 08:00 am - 05:00 pm
                             </li>
                             <li>
-                                <a href="tel:+4733378901"><i className="fas fa-phone-alt"></i> +4733378901</a>
+                                <a href="tel:+4733378901"><i className="fas fa-phone-alt"></i> +234733378901</a>
                             </li>
                         </ul>
                     </div>
@@ -47,4 +47,4 @@ const TopBar = () => {
     )
 }
 
-export default TopBar; 
+export default TopBar;

@@ -1,23 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const CallToAction = () => {
     return (
         <div className="call-to-action-area overflow-hidden default-padding-top bg-gray" style={{ backgroundImage: "url(/assets/img/shape/24.png)" }}>
             <div className="shape">
-                <img src="assets/img/illustration/13.png" alt="Image Not Found" />
+                <img src="assets/img/illustration/13.png" alt="Not Found" />
             </div>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-12">
                         <div className="callto-action text-light">
-                            <h2 className="title">Built the best agriculture market</h2>
+                            <h2 className="title">Join Us in Revolutionizing Agriculture</h2>
                             <p>
-                                    Give lady of they such they sure it. Me contained explained my education.
-                                    Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an.
-                                    Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff.
-                                    To perpetual do existence northward as difficult.
+                                Discover a wide range of organic and sustainable agricultural products. From fresh fruits and vegetables to premium dairy and cereals, we are committed to providing the best quality produce. Our journey is driven by a passion for farming and a dedication to delivering fresh, healthy products to our customers.
                             </p>
-                            <a href="#">Discover More</a>
+                            <Link to={'/aboutus'}>Discover More</Link>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-12">
@@ -25,16 +23,16 @@ const CallToAction = () => {
                             <div className="brand-style-one-carousel swiper">
                                 <div className="swiper-wrapper">
                                     <div className="swiper-slide">
-                                        <img src="/assets/img/brand/1.png" alt="Thumb" />
+                                        <img src="/assets/img/brand/1.png" alt="Brand Logo 1" />
                                     </div>
                                     <div className="swiper-slide">
-                                        <img src="/assets/img/brand/2.png" alt="Thumb" />
+                                        <img src="/assets/img/brand/2.png" alt="Brand Logo 2" />
                                     </div>
                                     <div className="swiper-slide">
-                                        <img src="/assets/img/brand/3.png" alt="Thumb" />
+                                        <img src="/assets/img/brand/3.png" alt="Brand Logo 3" />
                                     </div>
                                     <div className="swiper-slide">
-                                        <img src="/assets/img/brand/4.png" alt="Thumb" />
+                                        <img src="/assets/img/brand/4.png" alt="Brand Logo 4" />
                                     </div>
                                 </div>
                             </div>
